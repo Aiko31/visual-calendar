@@ -1,0 +1,184 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.dashboard-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.form-group.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.col-3, .col-4, .col-9, .col-2, .col-12 {
+  padding: 0 10px;
+}
+
+.col-3 { flex: 0 0 25%; }
+.col-4 { flex: 0 0 33.33%; }
+.col-9 { flex: 0 0 75%; }
+.col-2 { flex: 0 0 16.66%; }
+.col-12 { flex: 0 0 100%; }
+
+.text-right {
+  text-align: right;
+}
+
+.btn {
+  background: #4caf50;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+.time-visualization {
+  display: grid;
+  grid-template-columns: repeat(96, 1fr);
+  gap: 1px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.slot {
+  height: 100%;
+  background: #ccc;
+}
+
+.slot.active {
+  background: #4caf50;
+}
+
+select option:disabled {
+  background-color: #eee !important;
+  color: #999 !important;
+}
+
+.tab-pane {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.nav-tabs .nav-link.active {
+  background: white !important;
+  border-color: #ddd #ddd transparent;
+  color: #000;
+}
+
+.time-visualization {
+  display: grid;
+  grid-template-columns: repeat(96, 1fr);
+  gap: 1px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.slot {
+  height: 100%;
+  background: #ccc;
+}
+
+.slot.active {
+  background: white; /* ← ここを緑から白に変更 */
+}
+
+.time-slot-group {
+  margin-top: 20px; /* タブ上部との余白 */
+}
+.time-slot-group .form-group.row > div {
+  max-width: 250px; /* お好みで調整（200〜300px推奨） */
+  flex: 0 0 250px;
+}
+ .time-visualization-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 480px;
+    }
+    .time-visualization-row {
+      display: grid;
+      grid-template-columns: repeat(24, 1fr);
+      gap: 1px;
+      height: 16px;
+      align-items: center;
+      margin-top: 0px;
+      margin-bottom: 5px;     
+    }
+  .time-visualization-label {
+    font-size: 12px;
+    margin: 4px 0;
+    color: #555;
+    font-weight: bold;
+  }
+
+    .slot {
+      height: 100%;
+    }
+    .slot.active {
+      background: #4caf50;
+    }
+    .slot.inactive-night {
+      background: grey;
+    }
+    .slot.inactive-day {
+      background: grey;
+    }
+    .time-slot-group {
+      margin-top: 20px;
+    }
+    .time-slot-group .form-group.row > div {
+      max-width: 200px;
+      flex: 0 0 200px;
+      padding: 0 10px;
+    }
+    .time-slot-visual-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .visual-heading {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .time-visualization-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  max-width: 480px;
+  min-height: 100px; /* 追加 */
+}
+.time-visualization-label-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6つのラベルを等間隔 */
+  font-size: 12px;
+  color: #555;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.time-visualization-label-row .time-visualization-label {
+  flex: 1;
+  text-align: left;
+  font-size: 12px;
+  color: #555;
+}
